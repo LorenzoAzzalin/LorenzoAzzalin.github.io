@@ -1,0 +1,57 @@
+﻿#city_wrapper{/*crea la griglia in cui inserire le immagini*/
+	display:grid;
+	grid-template-columns: 1fr 4fr 4fr 1fr; /*divide la pagina in 4 parti tenendo conto delle dimensioni dello schermo*/
+	gap:10px;
+}
+p{/*Specifico le dimensioni del carattere per il tag <p>*/
+	font-size: 2vw;
+}
+
+article{/*Fa in modo che ogni articolo prenda l'intero spazio in cui viene inserito*/
+	display:block;
+	grid-column:1/5;
+	margin-bottom:20px;
+}
+.link_button {  /*Fornisce uno stile ai link per raggiungere Google Maps*/
+	background:none;
+	border:none;
+	color:darkorange;
+	text-decoration:underline;
+	cursor:pointer;
+	font-size: 2.5vw;
+	font-family:serif;
+}
+.floating_article { /*Serve a mettere un articolo al centro dello schermo*/
+	display: block;
+	grid-column: 2/4;
+	text-align: center;
+}
+
+.left_article_image {/*Serve a mettere le immagini sulla sinistra della pagina, per poter posizionare i caratteri da un lato piuttosto che dall'altro*/
+	float: left;
+	width: 50%;
+	margin-right: 10px;
+}
+.section{ /*Serve ad organizzare l'artiolo in sezioni*/
+	display:inline-block;
+}
+.right_article_image {
+	float: right;
+	width: 50%;
+	margin-left: 10px;
+}
+img { /*Setta le immagini all'ottanta percento di larghezza*/
+	width: 80%;
+	text-align: center;
+}
+h1 {/*Setta la dimensioni per i tag <h1> e <h2>, questi ultimi verranno usati per i titoli*/
+	font-size: 5vw;
+	text-align: center;
+	grid-column: 1/5;
+}
+h2 {
+	font-size: 2.5vw;
+	text-align: center;
+	grid-column: 1/5;
+}
+
